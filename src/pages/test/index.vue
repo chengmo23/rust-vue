@@ -31,6 +31,7 @@
 		<h1>Counter: {{ $store.test2.useTestStore().count }}</h1>
 		<button @click="$store.test2.useTestStore().add">click</button>
 	</div>
+	
 </template>
 
 <script setup>
