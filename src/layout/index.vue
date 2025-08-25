@@ -6,11 +6,7 @@
 					<a-avatar size="large" src="https://game.gtimg.cn/images/lol/act/img/champion/Draven.png" />
 					<a-flex :vertical="true" justify="center" align="flex-start">
 						<a-tag :bordered="false" color="cyan">
-							<a-typography-text
-								style="width: 80px"
-								:ellipsis="true"
-								content="怎么会爱上她、、、"
-							/>
+							<a-typography-text style="width: 80px" :ellipsis="true" content="怎么会爱上她、、、" />
 						</a-tag>
 					</a-flex>
 				</a-flex>
@@ -33,7 +29,7 @@
 				<a-flex :vertical="true" justify="space-between" align="center" style="height: 100%">
 					<a-menu class="menu" :mode="state.mode" :items="items" :theme="state.theme"></a-menu>
 					<a-flex :vertical="true" justify="center" align="center" gap="10" style="height: 20%">
-						<a-popover placement="rightTop" trigger="click">
+						<a-popover placement="rightBottom" trigger="click">
 							<template #content>
 								<a-qrcode
 									size="300"
@@ -48,7 +44,7 @@
 								找人开黑
 							</a-tag>
 						</a-popover>
-						<a-popover placement="rightTop" trigger="click">
+						<a-popover placement="rightBottom" trigger="click">
 							<template #content>
 								<a-qrcode
 									size="300"
@@ -63,7 +59,7 @@
 								优质陪玩
 							</a-tag>
 						</a-popover>
-						<a-popover placement="rightTop" trigger="click">
+						<a-popover placement="rightBottom" trigger="click">
 							<template #content>
 								<a-qrcode
 									size="300"
@@ -146,7 +142,7 @@ const siderStyle = {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .menu {
 	height: 70%;
 	display: flex;
@@ -166,5 +162,9 @@ const siderStyle = {
 :deep(.menu .ant-menu-item .ant-menu-title-content) {
 	width: auto !important;
 	flex: none;
+}
+
+:deep(.ant-tag) {
+	cursor: pointer;
 }
 </style>

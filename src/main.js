@@ -15,6 +15,9 @@ app.mixin(mixin);
 import { filters } from "@/utils/filters.js";
 app.config.globalProperties.$filters = filters;
 
+// 全局样式
+import "@/styles/global.scss";
+
 // Antdv
 import "ant-design-vue/dist/reset.css";
 import Antd from "ant-design-vue";

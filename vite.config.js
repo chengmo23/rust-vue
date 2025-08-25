@@ -19,13 +19,6 @@ export default defineConfig(async () => ({
 			"@": "/src",
 		},
 	},
-	// css: {
-	// 	preprocessorOptions: {
-	// 		scss: {
-	// 			additionalData: '@import "@/styles/variables.scss";',
-	// 		},
-	// 	},
-	// },
 
 	// 1. prevent Vite from obscuring rust errors
 	clearScreen: false,
